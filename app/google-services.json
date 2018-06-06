@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "685668393596",
+    "firebase_url": "https://canscan-8943d.firebaseio.com",
+    "project_id": "canscan-8943d",
+    "storage_bucket": "canscan-8943d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:685668393596:android:cf6e13c7bafbd390",
+        "android_client_info": {
+          "package_name": "com.example.devin.canscan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "685668393596-5hlj52ji3t0f53fcuphr66vhad0v09pn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.devin.canscan",
+            "certificate_hash": "eed964c1d171a39d0fa7bbac5011da9812ae338b"
+          }
+        },
+        {
+          "client_id": "685668393596-pnq3fg5d627g6mt9m9p5srpvtmivp993.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "685668393596-pnq3fg5d627g6mt9m9p5srpvtmivp993.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVB3EqVsfePBsaE2X_3R3DRhq69W6X8ko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "685668393596-pnq3fg5d627g6mt9m9p5srpvtmivp993.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
