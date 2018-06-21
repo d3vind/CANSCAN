@@ -22,6 +22,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.ml.vision.FirebaseVision;
 import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
@@ -45,6 +46,8 @@ public class CameraFragment extends android.support.v4.app.Fragment {
     private ImageView imageView;
     private TextView txtView;
     private File photoFile;
+    private Button mLogout;
+    private Button mFindUsers;
 
     //
     //the function that we call from inside the main activity
@@ -64,6 +67,9 @@ public class CameraFragment extends android.support.v4.app.Fragment {
         detectBtn = view.findViewById(R.id.detectBtn);
         imageView = view.findViewById(R.id.imageView);
         txtView = view.findViewById(R.id.txtView);
+
+
+
         snapBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,7 +109,6 @@ public class CameraFragment extends android.support.v4.app.Fragment {
                         photoURI);
                 startActivityForResult(pictureIntent,
                         REQUEST_IMAGE_CAPTURE);
-                setPhotoFile(photoFile);
 
 
             }
@@ -234,11 +239,7 @@ public class CameraFragment extends android.support.v4.app.Fragment {
     }
 
 
-    public void setPhotoFile(File photoFile) {
-        this.photoFile = photoFile;
-    }
 
-    public File getPhotoFile() {
-        return photoFile;
-    }
+
+
 }
